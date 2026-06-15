@@ -1,0 +1,36 @@
+# 🕹️ Arcade Day Pass Tracker — Challenge Steps
+#
+# 1) Create variables to store:
+#    - customer name
+#    - number of passes
+#    - tokens per pass
+#    - price per pass
+#    - tokens required per game
+#
+# 2) Calculate:
+#    - total tokens
+#    - total cost
+#    - games available  (use 'floor division' to get a whole number)
+#
+# 3) Print a summary with:
+#    - customer name
+#    - passes bought
+#    - total tokens
+#    - total cost
+#    - games available
+
+customer_name = 'Greyson'
+num_of_passes = 2
+tokens_per_pass = 10
+price_per_pass = 19.99
+tokens_req_per_game = 1
+
+total_tokens = num_of_passes * tokens_per_pass
+total_cost = num_of_passes * price_per_pass
+games_available  = (num_of_passes * tokens_per_pass ) // tokens_req_per_game
+
+print('customer name = ' + str(customer_name))
+print('passes bought = ' + str(num_of_passes))
+print('total tokens = '+ str(total_tokens))
+print('total cost = ' + str(total_cost))
+print('games available = ' + str(games_available))
