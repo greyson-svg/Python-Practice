@@ -5,11 +5,11 @@
 # - hint: use correct types for calculating and print
 # - Did you capitalize the name
 
-name = input('Enter Your First Name: ').capitalize()
-
-Distance_km = float(input('Enter the distance in Kilometers: '))
-Converted_Distance = float(Distance_km) / 1.609
-
-print('Hello ' + name + '! Your Distance is ' + str(Distance_km) + ' kilometers.' + '! Your converted distance is ' + str(Converted_Distance) + ' miles!')
 
 
+name = input('Enter Your First Name ')
+distance_in_km = input('Enter Your Distance in Kilometers ')
+
+distance_in_mi = float(distance_in_km) / 1.609
+
+print(f'Hi {name.title()}! {distance_in_km} is the equivalent to {distance_in_mi}! ')
