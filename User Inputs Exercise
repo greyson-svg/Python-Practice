@@ -12,4 +12,4 @@ distance_in_km = input('Enter Your Distance in Kilometers ')
 
 distance_in_mi = float(distance_in_km) / 1.609
 
-print(f'Hi {name.title()}! {distance_in_km} is the equivalent to {distance_in_mi}! ')
+print(f'Hi {name.title()}! {distance_in_km} is the equivalent to {round(distance_in_mi,1)}! ')
