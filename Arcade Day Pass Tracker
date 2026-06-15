@@ -21,16 +21,18 @@
 
 customer_name = 'Greyson'
 num_of_passes = 2
-tokens_per_pass = 10
+tokens_per_pass = 20
 price_per_pass = 19.99
-tokens_req_per_game = 1
+tokens_req_per_game = 3
 
 total_tokens = num_of_passes * tokens_per_pass
 total_cost = num_of_passes * price_per_pass
 games_available  = (num_of_passes * tokens_per_pass ) // tokens_req_per_game
 
-print('customer name = ' + str(customer_name))
+print('==== ARCADE DAY PASS RECEIPT ====')
+
+print('customer name = ' + customer_name)
 print('passes bought = ' + str(num_of_passes))
 print('total tokens = '+ str(total_tokens))
-print('total cost = ' + str(total_cost))
+print('total cost $' + str(total_cost))
 print('games available = ' + str(games_available))
